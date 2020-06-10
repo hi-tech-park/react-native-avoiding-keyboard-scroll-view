@@ -1,6 +1,4 @@
 
-import { NativeModules } from 'react-native'
+import KeyboardScrollView from './src/KeyboardView/KeyboardScrollView'
 
-const { RNKeyboardview } = NativeModules
-
-export default RNKeyboardview
+export { KeyboardScrollView }
