@@ -11,6 +11,9 @@
   },
   "keywords": [
     "react-native",
+    "react-native-keyboard-avoiding-scroll-view",
+    "android",
+    "ios",
     "keyboardview",
     "keyboardAvoiding",
     "keyboardFloattingButton",

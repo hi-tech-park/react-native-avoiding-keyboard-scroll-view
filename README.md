@@ -1,35 +1,20 @@
 
-# react-native-keyboardview
+# react-native-keyboard-avoiding-scroll-view
 
-![](https://i.niupic.com/images/2020/06/12/8gaw.gif)
+![](https://s1.ax1x.com/2020/06/12/tLHpuj.gif)
 
 
 ## Getting started
 
-`$ npm install react-native-keyboardview --save`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-keyboardview`
+`$ npm install react-native-keyboard-avoiding-scroll-view --save`
 
 ### Manual installation
-
 
 #### iOS
 
 #### Android
-
-1. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-keyboardview'
-  	project(':react-native-keyboardview').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-keyboardview/android')
-  	```
-2. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-keyboardview')
-  	```
   	
-3. Insert the following lines inside in `AndroidManifest.xml`:
+1. Insert the following lines inside in `AndroidManifest.xml`:
   	```
     <activity
        android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
@@ -38,7 +23,7 @@
 
 ## Usage
 ```javascript
-import { KeyboardScrollView } from 'react-native-keyboardview'
+import { KeyboardScrollView } from 'react-native-keyboard-avoiding-scroll-view'
 
 // TODO: What to do with the module?
 class A extends Component{
