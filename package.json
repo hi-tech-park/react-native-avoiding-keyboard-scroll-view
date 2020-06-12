@@ -1,7 +1,7 @@
 {
-  "name": "react-native-keyboardview",
-  "version": "1.0.0",
-  "description": "",
+  "name": "react-native-keyboard-avoiding-scroll-view",
+  "version": "0.1.1",
+  "description": "react naitve view resizes and the bottom view floating on the keyboard when keyboard appears",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint . --ext .js,.ts,.tsx --fix",
@@ -18,8 +18,12 @@
     "keyboardButton",
     "keyboardScollView"
   ],
-  "author": "",
-  "license": "",
+  "author": "hi-tech-park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hi-tech-park/react-native-keyboard-view/issues"
+  },
+  "homepage": "https://github.com/hi-tech-park/react-native-keyboard-view",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },

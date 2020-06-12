@@ -1,6 +1,9 @@
 
 # react-native-keyboardview
 
+![](https://i.niupic.com/images/2020/06/12/8gaw.gif)
+
+
 ## Getting started
 
 `$ npm install react-native-keyboardview --save`
@@ -14,32 +17,54 @@
 
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-keyboardview` and add `RNKeyboardview.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNKeyboardview.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
-
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.rn.keyboardview.RNKeyboardviewPackage;` to the imports at the top of the file
-  - Add `new RNKeyboardviewPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
+1. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-keyboardview'
   	project(':react-native-keyboardview').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-keyboardview/android')
   	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+2. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
       compile project(':react-native-keyboardview')
+  	```
+  	
+3. Insert the following lines inside in `AndroidManifest.xml`:
+  	```
+    <activity
+       android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
   	```
 
 
 ## Usage
 ```javascript
-import RNKeyboardview from 'react-native-keyboardview';
+import { KeyboardScrollView } from 'react-native-keyboardview'
 
 // TODO: What to do with the module?
-RNKeyboardview;
+class A extends Component{
+  render(){
+    return (
+      <KeyboardScrollView
+        keyboardViewOffset={30}
+        renderBottomComponent={() => <View/>}
+      >
+          // your layout
+      </KeyboardScrollView>
+    )
+  }
+}
 ```
+
+## API
+#### Props 
+
+All the ScrollView props will be passed.
+
+| Props                 | Type      | required | description                            |
+| --------------------- | --------- | -------- | -------------------------------------- |
+| containerStyle        | ViewStyle | no       | style of container                     |
+| bottomContainerStyle  | ViewStyle | no       | style of  then fixed bottom            |
+| keyboardViewOffset    | number    | no       | distance between keyboard and TexInput |
+| renderBottomComponent | Function  | no       | the component of fixed bottom          |
+| scrollRef             | ref       | no       | ref of scroll view                     |
   
