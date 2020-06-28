@@ -21,6 +21,7 @@
     "keyboardButton",
     "keyboardScollView"
   ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "hi-tech-park",
   "license": "MIT",
   "bugs": {
