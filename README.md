@@ -21,7 +21,7 @@ Both support android and ios
     <activity
        android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
   	```
-  	#####note:
+  	##### note:
   	if you want set another mode in different Scenes, you can set properties dynamically in native
   	```java
   	 public void setAdjustPan() {
