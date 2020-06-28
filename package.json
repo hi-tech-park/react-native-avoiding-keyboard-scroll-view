@@ -21,7 +21,7 @@
     "keyboardButton",
     "keyboardScollView"
   ],
-  "publishConfig": { "registry": "https://github.com/hi-tech-park/react-native-avoiding-keyboard-scroll-view.git" },
+  "publishConfig": { "registry": "https://github.com/hi-tech-park/react-native-avoiding-keyboard-scroll-view" },
   "author": "hi-tech-park",
   "license": "MIT",
   "bugs": {
