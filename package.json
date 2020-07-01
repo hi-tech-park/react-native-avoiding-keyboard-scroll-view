@@ -22,7 +22,7 @@
     "keyboardScollView"
   ],
   "publishConfig": {
-    "registry": "https://github.com/hi-tech-park/react-native-avoiding-keyboard-scroll-view"
+    "registry": "https://registry.npmjs.org/"
   },
   "author": "hi-tech-park",
   "license": "MIT",
